@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Viral Tool - YouTube SEO Suite 2026 | Viral Tag Generator</title>
+    <title>Best Viral Tool - Master YouTube SEO Suite 2026 | Viral Tag Generator</title>
     
     <meta name="description" content="Best Viral Tool is the world's leading YouTube SEO suite. Extract real tags, generate viral keywords, and download thumbnails. Created by Syed Ali Hassan Shah.">
-    <meta name="keywords" content="Best Viral Tool, YouTube SEO, Viral Tag Generator, HD Thumbnail Downloader, Syed Ali Hassan Shah, Mast TV, YouTube Tag Extractor, SEO Tool USA, SEO India, SEO Pakistan, You Tube SEO, Youtub SEO, Yutub SEO, Thambnail Downloader, Thubnail, YouTube Viral Keywords, How to Viral Video, YouTube Shorts SEO 2026, Free SEO Suite, Tagganrator, Mast TV Official YouTube, Viral Video Strategy, Get More Views Tool">
+    <meta name="keywords" content="Best Viral Tool, YouTube SEO, Viral Tag Generator, HD Thumbnail Downloader, Syed Ali Hassan Shah, Mast TV, YouTube Tag Extractor, SEO Tool USA, SEO India, SEO Pakistan, You Tube SEO, Youtub SEO, Yutub SEO, Thambnail Downloader, Thubnail, YouTube Viral Keywords, How to Viral Video, YouTube Shorts SEO 2026, Free SEO Suite, Tagganrator, Mast TV Official YouTube, Viral Video Strategy, Get More Views Tool, SEO Tool 2026, YouTube Algorithm Hack">
     <meta name="author" content="Syed Ali Hassan Shah">
     <meta name="robots" content="index, follow">
 
@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Poppins:wght@300;400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;800&display=swap');
         
         :root {
             --neon-red: #ff0000;
             --neon-blue: #00d4ff;
-            --glass-bg: rgba(15, 23, 42, 0.8);
+            --glass: rgba(15, 23, 42, 0.9);
+            --border: rgba(255, 255, 255, 0.1);
         }
 
         body { 
@@ -27,216 +28,263 @@
             color: #f8fafc; 
             font-family: 'Poppins', sans-serif; 
             overflow-x: hidden;
-            background-image: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #020617 100%);
+            background-image: radial-gradient(circle at 10% 20%, #1e1b4b 0%, #020617 80%);
         }
 
-        .neon-border-red { border: 1px solid rgba(239, 68, 68, 0.2); box-shadow: 0 0 15px rgba(239, 68, 68, 0.1); }
-        .neon-border-blue { border: 1px solid rgba(59, 130, 246, 0.2); box-shadow: 0 0 15px rgba(59, 130, 246, 0.1); }
-        .neon-border-purple { border: 1px solid rgba(168, 85, 247, 0.2); box-shadow: 0 0 15px rgba(168, 85, 247, 0.1); }
-
-        .glass-card { 
-            background: var(--glass-bg); 
-            backdrop-filter: blur(12px); 
-            border-radius: 28px; 
-            padding: 2rem;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        /* Glassmorphism Effects */
+        .glass-panel { 
+            background: var(--glass); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid var(--border); 
+            border-radius: 32px; 
+            padding: 2.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
+        .glass-panel:hover { transform: translateY(-8px); border-color: rgba(255,255,255,0.2); }
 
-        .glass-card:hover { transform: translateY(-5px); border-color: rgba(255,255,255,0.2); }
-
-        .neon-text { font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+        .neon-text { font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 3px; }
         
-        .premium-btn {
+        /* Premium Buttons */
+        .btn-main {
             background: linear-gradient(135deg, #ef4444 0%, #9333ea 100%);
-            box-shadow: 0 10px 20px -10px rgba(239, 68, 68, 0.5);
+            box-shadow: 0 15px 30px -10px rgba(239, 68, 68, 0.5);
             transition: 0.3s;
+            border-radius: 16px;
         }
+        .btn-main:hover { transform: scale(1.03); box-shadow: 0 20px 40px -10px rgba(239, 68, 68, 0.7); }
 
-        .premium-btn:active { transform: scale(0.95); }
+        .tag-pill {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid #334155;
+            padding: 8px 15px;
+            border-radius: 10px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 4px;
+        }
+        .tag-pill:hover { background: #3b82f6; border-color: #60a5fa; color: white; }
 
         input {
             background: #0f172a !important;
-            border: 1px solid #334155 !important;
+            border: 2px solid #1e293b !important;
             color: #fff !important;
-            border-radius: 12px !important;
-            padding: 1rem !important;
+            border-radius: 16px !important;
+            padding: 1.2rem !important;
             width: 100%;
+            transition: 0.3s;
         }
+        input:focus { border-color: #ef4444 !important; outline: none; box-shadow: 0 0 15px rgba(239,68,68,0.2); }
 
-        .copy-btn {
-            background: rgba(16, 185, 129, 0.1);
-            color: #10b981;
-            border: 1px solid #10b981;
-            padding: 5px 12px;
-            border-radius: 8px;
-            font-size: 11px;
-            font-weight: bold;
+        .copy-label {
+            background: #10b981;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 10px;
+            font-weight: 800;
             cursor: pointer;
+            text-transform: uppercase;
         }
 
-        .quality-card {
+        .download-box {
             background: #1e293b;
-            padding: 1rem;
-            border-radius: 16px;
+            padding: 1.2rem;
+            border-radius: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 10px;
-            cursor: pointer;
             border: 1px solid transparent;
+            transition: 0.3s;
         }
+        .download-box:hover { border-color: #ef4444; background: #0f172a; }
 
-        .quality-card:hover { border-color: #ef4444; background: #0f172a; }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ef4444; }
 
-        /* Animation */
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-up { animation: fadeIn 0.6s ease-out forwards; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+        .slide-up { animation: slideUp 0.8s ease-out forwards; }
     </style>
 </head>
-<body class="min-h-screen pb-20">
+<body class="min-h-screen pb-24">
 
-    <div class="w-full flex justify-center py-6 bg-slate-950/50 mb-8">
+    <div class="w-full flex justify-center py-6 bg-slate-950/80 mb-10">
         <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
         <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
     </div>
 
-    <div id="splashScreen" class="fixed inset-0 bg-slate-950 z-[999] flex flex-col items-center justify-center p-6">
-        <div class="relative">
-            <div class="absolute -inset-4 bg-red-600 rounded-full blur-2xl opacity-20 animate-pulse"></div>
-            <i class="fa-solid fa-bolt-lightning text-6xl text-red-500 relative"></i>
+    <div id="splashLayer" class="fixed inset-0 bg-slate-950 z-[999] flex flex-col items-center justify-center p-8">
+        <div class="relative mb-8">
+            <div class="absolute -inset-6 bg-red-600 rounded-full blur-3xl opacity-25 animate-pulse"></div>
+            <i class="fa-solid fa-atom text-7xl text-red-500 relative animate-spin-slow"></i>
         </div>
-        <h1 class="mt-8 text-4xl font-black neon-text text-white">BEST <span class="text-red-500">VIRAL</span> TOOL</h1>
-        <p class="text-slate-500 mt-2 tracking-[5px] uppercase text-[10px]">Syed Ali Hassan Shah Production</p>
-        <button onclick="initApp()" class="mt-10 premium-btn px-12 py-4 rounded-full text-white font-bold tracking-widest uppercase">Start Engine</button>
+        <h1 class="text-5xl font-black neon-text text-white text-center">BEST <span class="text-red-500">VIRAL</span> TOOL</h1>
+        <p class="text-slate-500 mt-4 tracking-[8px] uppercase text-xs font-bold">2026 Engine Edition</p>
+        <button onclick="startEngine()" class="mt-12 btn-main px-16 py-5 text-white font-black tracking-widest uppercase">Launch AI Suite</button>
     </div>
 
-    <header class="max-w-4xl mx-auto px-6 pt-10 text-center animate-up">
-        <h1 class="text-5xl font-black neon-text">BEST <span class="text-red-500">VIRAL</span> TOOL</h1>
-        <div class="h-1 w-32 bg-red-600 mx-auto mt-4 rounded-full"></div>
-        <p class="mt-4 text-slate-400 font-medium italic">Master YouTube SEO with Artificial Intelligence</p>
+    <header class="max-w-5xl mx-auto px-6 pt-16 text-center slide-up">
+        <h1 class="text-6xl font-black neon-text leading-tight">BEST <span class="text-red-500">VIRAL</span> TOOL</h1>
+        <div class="h-1.5 w-40 bg-gradient-to-r from-red-600 to-purple-600 mx-auto mt-6 rounded-full"></div>
+        <p class="mt-6 text-slate-400 font-semibold text-lg max-w-2xl mx-auto">Optimize your YouTube content with our advanced metadata extractor and viral tag engine.</p>
     </header>
 
-    <main class="max-w-2xl mx-auto px-6 mt-12 space-y-10">
+    <main class="max-w-3xl mx-auto px-6 mt-20 space-y-16">
 
-        <section class="glass-card neon-border-purple animate-up" style="animation-delay: 0.1s;">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 bg-purple-600/20 rounded-lg flex items-center justify-center">
-                    <i class="fa-solid fa-link text-purple-500"></i>
+        <section class="glass-panel slide-up" style="animation-delay: 0.1s;">
+            <div class="flex items-center gap-5 mb-10">
+                <div class="w-14 h-14 bg-red-600/20 rounded-2xl flex items-center justify-center shadow-lg shadow-red-900/10">
+                    <i class="fa-solid fa-wand-magic-sparkles text-red-500 text-2xl"></i>
                 </div>
                 <div>
-                    <h2 class="font-bold text-lg">Extract Metadata</h2>
-                    <p class="text-xs text-slate-500 uppercase tracking-tighter">Get real title, tags & description</p>
+                    <h2 class="text-2xl font-black uppercase tracking-wide">AI Metadata Extractor</h2>
+                    <p class="text-sm text-slate-500 font-bold uppercase tracking-widest">Get Real Title & Pro Descriptions</p>
                 </div>
             </div>
 
-            <div class="space-y-4">
-                <input type="text" id="videoLinkInput" placeholder="Paste YouTube Video URL here..." onfocus="triggerAd()">
-                <button onclick="runExtractorEngine()" class="w-full premium-btn py-4 rounded-xl font-bold flex items-center justify-center gap-2">
-                    <span>EXTRACT DATA</span>
-                    <i class="fa-solid fa-arrow-right"></i>
+            <div class="space-y-6">
+                <input type="text" id="vUrl" placeholder="Paste YouTube Video URL here..." onfocus="showAd()">
+                <button onclick="processMetadata()" class="w-full btn-main py-5 font-black text-white flex items-center justify-center gap-4 text-lg">
+                    <span>EXTRACT PRO DATA</span>
+                    <i class="fa-solid fa-bolt"></i>
                 </button>
             </div>
 
-            <div id="resultArea" class="hidden mt-8 space-y-6">
-                <div class="bg-black/40 p-4 rounded-xl border border-white/5 relative">
-                    <button class="copy-btn absolute top-3 right-3" onclick="copyContent('resTitle')">COPY</button>
-                    <label class="text-[10px] text-purple-400 font-bold uppercase">Video Title</label>
-                    <p id="resTitle" class="text-sm mt-2 pr-12 leading-relaxed font-semibold"></p>
+            <div id="metaDisplay" class="hidden mt-12 space-y-8 animate-fade-in">
+                <div class="relative group">
+                    <div class="flex justify-between items-center mb-2">
+                        <label class="text-xs font-black text-red-500 uppercase tracking-widest">Optimized Title</label>
+                        <span class="copy-label" onclick="copyValue('dispTitle')">Copy</span>
+                    </div>
+                    <div id="dispTitle" class="bg-black/40 p-5 rounded-2xl border border-white/5 text-sm font-bold text-slate-200 leading-relaxed"></div>
                 </div>
-                <div class="bg-black/40 p-4 rounded-xl border border-white/5 relative">
-                    <button class="copy-btn absolute top-3 right-3" onclick="copyContent('resDesc')">COPY</button>
-                    <label class="text-[10px] text-purple-400 font-bold uppercase">Description</label>
-                    <p id="resDesc" class="text-[11px] mt-2 pr-12 h-24 overflow-y-auto text-slate-400"></p>
+
+                <div class="relative group">
+                    <div class="flex justify-between items-center mb-2">
+                        <label class="text-xs font-black text-red-500 uppercase tracking-widest">Viral Description (SEO Ready)</label>
+                        <span class="copy-label" onclick="copyValue('dispDesc')">Copy All</span>
+                    </div>
+                    <div id="dispDesc" class="bg-black/40 p-5 rounded-2xl border border-white/5 text-[11px] text-slate-400 h-48 overflow-y-auto leading-relaxed whitespace-pre-line"></div>
                 </div>
-                <div class="bg-black/40 p-4 rounded-xl border border-white/5 relative">
-                    <button class="copy-btn absolute top-3 right-3" onclick="copyContent('resTags')">COPY</button>
-                    <label class="text-[10px] text-purple-400 font-bold uppercase">Extracted Tags</label>
-                    <p id="resTags" class="text-[11px] mt-2 pr-12 text-slate-400 italic"></p>
+
+                <div class="relative group">
+                    <div class="flex justify-between items-center mb-2">
+                        <label class="text-xs font-black text-red-500 uppercase tracking-widest">Extracted Viral Tags</label>
+                        <span class="copy-label" onclick="copyValue('dispTags')">Copy All</span>
+                    </div>
+                    <div id="dispTags" class="bg-black/40 p-5 rounded-2xl border border-white/5 text-xs text-blue-400 italic font-medium"></div>
                 </div>
             </div>
         </section>
 
-        <div class="flex justify-center my-10">
+        <div class="flex justify-center my-12">
             <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
             <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
         </div>
 
-        <section class="glass-card neon-border-blue animate-up" style="animation-delay: 0.2s;">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center">
-                    <i class="fa-solid fa-bolt text-blue-500"></i>
+        <section class="glass-panel slide-up" style="animation-delay: 0.2s;">
+            <div class="flex items-center gap-5 mb-10">
+                <div class="w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center">
+                    <i class="fa-solid fa-tags text-blue-500 text-2xl"></i>
                 </div>
                 <div>
-                    <h2 class="font-bold text-lg">Viral Tag Generator</h2>
-                    <p class="text-xs text-slate-500 uppercase">AI Keywords for USA, India, Pakistan</p>
+                    <h2 class="text-2xl font-black uppercase tracking-wide">Viral Tag Generator</h2>
+                    <p class="text-sm text-slate-500 font-bold uppercase tracking-widest">AI Keywords with Single Click Copy</p>
                 </div>
             </div>
 
-            <div class="space-y-4">
-                <input type="text" id="topicInput" placeholder="Enter Topic (e.g. Cooking, Gaming, Cricket)..." onfocus="triggerAd()">
-                <button onclick="runTagGenerator()" class="w-full bg-blue-600 hover:bg-blue-700 py-4 rounded-xl font-bold shadow-lg shadow-blue-900/20">GENERATE TAGS</button>
+            <div class="space-y-6">
+                <input type="text" id="tagInput" placeholder="Enter Topic (e.g. Cooking, Gaming, Vlog)..." onfocus="showAd()">
+                <button onclick="processTags()" class="w-full bg-blue-600 hover:bg-blue-700 py-5 rounded-2xl font-black shadow-xl shadow-blue-900/20 text-white">GENERATE SMART TAGS</button>
             </div>
 
-            <div id="tagResultArea" class="hidden mt-6 p-4 bg-black/40 rounded-xl border border-blue-500/20 relative">
-                <button class="copy-btn absolute top-3 right-3" onclick="copyContent('generatedTags')">COPY ALL</button>
-                <p id="generatedTags" class="text-xs leading-relaxed text-slate-300 pr-12 font-medium"></p>
+            <div id="tagDisplay" class="hidden mt-10">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="text-[10px] font-black text-blue-500 uppercase">Results (Click any tag to copy individually)</span>
+                    <span class="copy-label" onclick="copyAllTags()">Copy All Tags</span>
+                </div>
+                <div id="tagCloud" class="p-4 bg-black/40 rounded-3xl border border-blue-500/10 min-h-[100px]">
+                    </div>
             </div>
         </section>
 
-        <section class="glass-card neon-border-red animate-up" style="animation-delay: 0.3s;">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center">
-                    <i class="fa-solid fa-image text-red-500"></i>
+        <section class="glass-panel slide-up" style="animation-delay: 0.3s;">
+            <div class="flex items-center gap-5 mb-10">
+                <div class="w-14 h-14 bg-green-600/20 rounded-2xl flex items-center justify-center">
+                    <i class="fa-solid fa-download text-green-500 text-2xl"></i>
                 </div>
                 <div>
-                    <h2 class="font-bold text-lg">HD Thumbnail Downloader</h2>
-                    <p class="text-xs text-slate-500 uppercase">Get 4K, HD and Standard Covers</p>
+                    <h2 class="text-2xl font-black uppercase tracking-wide">HD Downloader</h2>
+                    <p class="text-sm text-slate-500 font-bold uppercase tracking-widest">4K & HD Thumbnail Studio</p>
                 </div>
             </div>
 
-            <div class="space-y-4">
-                <input type="text" id="thumbUrlInput" placeholder="Paste Video URL for Thumbnail..." onfocus="triggerAd()">
-                <button onclick="runThumbnailEngine()" class="w-full bg-red-600 hover:bg-red-700 py-4 rounded-xl font-bold">PREVIEW THUMBNAIL</button>
+            <div class="space-y-6">
+                <input type="text" id="tUrl" placeholder="Paste YouTube Link for Thumbnail..." onfocus="showAd()">
+                <button onclick="processThumb()" class="w-full bg-green-600 hover:bg-green-700 py-5 rounded-2xl font-black text-white text-lg">DOWNLOAD NOW</button>
             </div>
 
-            <div id="thumbResultArea" class="hidden mt-8 space-y-4">
-                <img id="thumbPreview" src="" class="w-full rounded-2xl shadow-2xl border border-white/10" alt="Thumbnail Preview">
-                <div class="grid grid-cols-1 gap-3">
-                    <div class="quality-card" onclick="downloadThumb('maxresdefault')">
-                        <span class="text-sm font-bold">Ultra HD Quality (4K)</span>
-                        <i class="fa-solid fa-download text-red-500"></i>
+            <div id="thumbDisplay" class="hidden mt-12 space-y-6">
+                <img id="tImg" src="" class="w-full rounded-3xl shadow-2xl border-4 border-white/5" alt="Preview">
+                
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="download-box" onclick="forceDL('maxresdefault')">
+                        <div>
+                            <p class="text-white font-black text-sm uppercase">Ultra High Definition (4K/HD)</p>
+                            <p class="text-[10px] text-slate-500">Best for professional editing</p>
+                        </div>
+                        <i class="fa-solid fa-cloud-arrow-down text-green-500 text-2xl"></i>
                     </div>
-                    <div class="quality-card" onclick="downloadThumb('sddefault')">
-                        <span class="text-sm font-bold">High Definition (HD)</span>
-                        <i class="fa-solid fa-download text-red-500"></i>
+                    <div class="download-box" onclick="forceDL('sddefault')">
+                        <div>
+                            <p class="text-white font-black text-sm uppercase">Standard Definition (SD)</p>
+                            <p class="text-[10px] text-slate-500">Fast loading, good quality</p>
+                        </div>
+                        <i class="fa-solid fa-cloud-arrow-down text-green-500 text-2xl"></i>
+                    </div>
+                    <div class="download-box" onclick="forceDL('mqdefault')">
+                        <div>
+                            <p class="text-white font-black text-sm uppercase">Medium Quality</p>
+                            <p class="text-[10px] text-slate-500">Best for social media previews</p>
+                        </div>
+                        <i class="fa-solid fa-cloud-arrow-down text-green-500 text-2xl"></i>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="glass-card text-center space-y-6 animate-up">
-            <h3 class="font-black tracking-widest text-slate-500 uppercase text-xs">Developed By</h3>
-            <div class="flex flex-col gap-4 max-w-xs mx-auto">
-                <a href="https://facebook.com/share/1BkM7n9jAn/" target="_blank" class="flex items-center justify-between bg-white/5 p-4 rounded-2xl hover:bg-white/10 transition">
-                    <i class="fa-brands fa-facebook text-blue-500 text-2xl"></i>
-                    <span class="font-bold text-sm">SYED ALI HASSAN SHAH</span>
-                </a>
-                <a href="https://youtube.com/@mast_tv_official" target="_blank" class="flex items-center justify-between bg-white/5 p-4 rounded-2xl hover:bg-white/10 transition">
-                    <i class="fa-brands fa-youtube text-red-600 text-2xl"></i>
-                    <span class="font-bold text-sm">MAST TV OFFICIAL</span>
-                </a>
-                <a href="https://tiktok.com/@zawar_syed_ali_hassan" target="_blank" class="flex items-center justify-between bg-white/5 p-4 rounded-2xl hover:bg-white/10 transition">
-                    <i class="fa-brands fa-tiktok text-white text-2xl"></i>
-                    <span class="font-bold text-sm">SYED ALI HASSAN SHAH</span>
-                </a>
+        <footer class="glass-panel text-center space-y-10 slide-up">
+            <div>
+                <h3 class="font-black tracking-[10px] text-slate-600 uppercase text-[10px] mb-8">Developed & Maintained By</h3>
+                <div class="flex flex-col gap-5 max-w-sm mx-auto">
+                    <a href="https://facebook.com/share/1BkM7n9jAn/" target="_blank" class="flex items-center justify-between bg-white/5 p-5 rounded-2xl hover:bg-white/10 transition group">
+                        <i class="fa-brands fa-facebook text-blue-500 text-3xl group-hover:scale-110 transition"></i>
+                        <span class="font-black text-xs tracking-widest">SYED ALI HASSAN SHAH</span>
+                    </a>
+                    <a href="https://youtube.com/@mast_tv_official" target="_blank" class="flex items-center justify-between bg-white/5 p-5 rounded-2xl hover:bg-white/10 transition group">
+                        <i class="fa-brands fa-youtube text-red-600 text-3xl group-hover:scale-110 transition"></i>
+                        <span class="font-black text-xs tracking-widest">MAST TV OFFICIAL</span>
+                    </a>
+                    <a href="https://tiktok.com/@zawar_syed_ali_hassan" target="_blank" class="flex items-center justify-between bg-white/5 p-5 rounded-2xl hover:bg-white/10 transition group">
+                        <i class="fa-brands fa-tiktok text-white text-3xl group-hover:scale-110 transition"></i>
+                        <span class="font-black text-xs tracking-widest">SYED ALI HASSAN SHAH</span>
+                    </a>
+                </div>
             </div>
             
-            <div class="pt-8 border-t border-white/5">
-                <p class="text-[10px] font-black text-slate-600 tracking-[3px]">© 2026 PRO VIRAL SEO SUITE - ALL RIGHTS RESERVED</p>
+            <div class="pt-10 border-t border-white/5">
+                <p class="text-[10px] font-black text-slate-700 tracking-[5px]">© 2026 PRO VIRAL SEO SUITE - VERSION 5.0.1</p>
             </div>
         </footer>
 
-        <div class="flex justify-center py-6">
+        <div class="flex justify-center py-10">
             <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
             <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
         </div>
@@ -244,101 +292,131 @@
     </main>
 
     <script>
-        let isAdShown = false;
+        let adReady = false;
 
-        function initApp() {
-            triggerAd();
-            document.getElementById('splashScreen').style.opacity = '0';
-            setTimeout(() => {
-                document.getElementById('splashScreen').style.display = 'none';
-            }, 500);
+        function startEngine() {
+            showAd();
+            document.getElementById('splashLayer').style.transform = 'translateY(-100%)';
+            setTimeout(() => document.getElementById('splashLayer').style.display = 'none', 600);
         }
 
-        function triggerAd() {
-            if (!isAdShown) {
+        function showAd() {
+            if (!adReady) {
                 window.open('https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js', '_blank');
-                isAdShown = true;
+                adReady = true;
             }
         }
 
-        function getYTID(url) {
-            const regex = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-            const match = url.match(regex);
-            return (match && match[2].length == 11) ? match[2] : null;
+        function getVid(u) {
+            const r = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+            const m = u.match(r);
+            return (m && m[2].length == 11) ? m[2] : null;
         }
 
-        async function runExtractorEngine() {
-            triggerAd();
-            const url = document.getElementById('videoLinkInput').value;
-            const id = getYTID(url);
-            
-            if (!id) return alert("Please enter a valid YouTube Link!");
+        // METADATA ENGINE
+        async function processMetadata() {
+            showAd();
+            const url = document.getElementById('vUrl').value;
+            const id = getVid(url);
+            if (!id) return alert("Error: Please provide a valid YouTube Link!");
 
-            const resArea = document.getElementById('resultArea');
-            resArea.classList.remove('hidden');
-            document.getElementById('resTitle').innerText = "Analyzing Metadata...";
+            const display = document.getElementById('metaDisplay');
+            display.classList.remove('hidden');
+            document.getElementById('dispTitle').innerText = "Loading Master Data...";
 
             try {
-                const response = await fetch(`https://noembed.com/embed?url=https://www.youtube.com/watch?v=${id}`);
-                const data = await response.json();
+                const res = await fetch(`https://noembed.com/embed?url=https://www.youtube.com/watch?v=${id}`);
+                const data = await res.json();
 
                 if (data.title) {
-                    document.getElementById('resTitle').innerText = data.title;
-                    document.getElementById('resDesc').innerText = `Full Video SEO Analysis: ${data.title}\nAuthor: ${data.author_name}\n\nThis video is highly optimized for 2026 trending algorithms. #SEO #Viral #SyedAliHassanShah #MastTV`;
+                    document.getElementById('dispTitle').innerText = data.title;
                     
-                    const words = data.title.toLowerCase().replace(/[^\w\s]/gi, '').split(' ').filter(w => w.length > 3);
-                    const viralTags = [...new Set([...words, "viral", "trending", "youtube seo", "shorts", "2026", "syed ali hassan shah"])];
-                    document.getElementById('resTags').innerText = viralTags.join(', ');
-                } else {
-                    throw new Error();
+                    // Comprehensive AI Description Generation
+                    const proDesc = `🚀 VIDEO OVERVIEW:
+${data.title}
+
+🔥 SEO STRATEGY:
+This video is part of the 2026 trending algorithm. Optimized by Best Viral Tool for maximum reach in USA, UK, India, and Pakistan.
+
+📌 KEY TOPICS COVERED:
+1. Deep dive into ${data.title}
+2. Advanced Tips & Tricks
+3. Viral Growth Secrets
+
+Follow ${data.author_name} for more high-quality content.
+Powered by @SyedAliHassanShah #SEO #Viral #BestViralTool #2026`;
+                    
+                    document.getElementById('dispDesc').innerText = proDesc;
+                    
+                    const tagsArr = data.title.toLowerCase().split(' ').filter(w => w.length > 3);
+                    const finalTags = [...new Set([...tagsArr, "viral", "trending", "2026", "shorts", "seo", "syed ali hassan shah", "mast tv"])];
+                    document.getElementById('dispTags').innerText = finalTags.join(', ');
                 }
             } catch (e) {
-                document.getElementById('resTitle').innerText = "Viral Strategy for ID: " + id;
-                document.getElementById('resDesc').innerText = "Description is protected or unavailable. Use the generator below for custom SEO.";
-                document.getElementById('resTags').innerText = "viral, trending, seo, youtube, shorts, syed ali hassan shah";
+                alert("Engine Busy. Using Fallback Data.");
+                document.getElementById('dispTitle').innerText = "Viral Video Strategy #" + id;
+                document.getElementById('dispTags').innerText = "viral, trending, shorts, seo, youtube";
             }
-            resArea.scrollIntoView({ behavior: 'smooth' });
+            display.scrollIntoView({ behavior: 'smooth' });
         }
 
-        function runTagGenerator() {
-            triggerAd();
-            const topic = document.getElementById('topicInput').value;
-            if (!topic) return alert("Please enter a topic!");
+        // SMART TAG GENERATOR ENGINE
+        function processTags() {
+            showAd();
+            const topic = document.getElementById('tagInput').value;
+            if (!topic) return alert("Enter a topic!");
 
-            const tags = [
+            const list = [
                 topic, `viral ${topic}`, `trending ${topic}`, `best ${topic} 2026`, 
-                `${topic} tips`, `how to ${topic}`, `new ${topic} video`, 
+                `${topic} hacks`, `how to ${topic}`, `new ${topic} video`, 
                 `syed ali hassan shah ${topic}`, `mast tv ${topic}`, `top ${topic} keywords`,
-                `youtube ${topic} seo`, `${topic} hacks`, `${topic} india`, `${topic} pakistan`,
-                `viral shorts ${topic}`, `${topic} strategy`, `${topic} 4k`
+                `youtube ${topic} seo`, `${topic} updates`, `${topic} shorts`, `trending now ${topic}`
             ];
 
-            const container = document.getElementById('tagResultArea');
-            container.classList.remove('hidden');
-            document.getElementById('generatedTags').innerText = tags.join(', ');
-            container.scrollIntoView({ behavior: 'smooth' });
+            const cloud = document.getElementById('tagCloud');
+            cloud.innerHTML = '';
+            document.getElementById('tagDisplay').classList.remove('hidden');
+
+            list.forEach(tag => {
+                const pill = document.createElement('div');
+                pill.className = 'tag-pill';
+                pill.innerHTML = `<span>${tag}</span> <i class="fa-solid fa-copy opacity-40 text-[10px]"></i>`;
+                pill.onclick = () => {
+                    navigator.clipboard.writeText(tag);
+                    pill.style.background = "#10b981";
+                    pill.style.color = "white";
+                    setTimeout(() => { pill.style.background = ""; pill.style.color = ""; }, 1000);
+                };
+                cloud.appendChild(pill);
+            });
+            document.getElementById('tagDisplay').scrollIntoView({ behavior: 'smooth' });
         }
 
-        function runThumbnailEngine() {
-            triggerAd();
-            const id = getYTID(document.getElementById('thumbUrlInput').value);
-            if (!id) return alert("Enter valid link!");
+        // THUMBNAIL ENGINE
+        function processThumb() {
+            showAd();
+            const id = getVid(document.getElementById('tUrl').value);
+            if (!id) return alert("Invalid Link!");
 
-            document.getElementById('thumbResultArea').classList.remove('hidden');
-            document.getElementById('thumbPreview').src = `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
-            document.getElementById('thumbResultArea').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('thumbDisplay').classList.remove('hidden');
+            document.getElementById('tImg').src = `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
+            document.getElementById('thumbDisplay').scrollIntoView({ behavior: 'smooth' });
         }
 
-        function downloadThumb(quality) {
-            const id = getYTID(document.getElementById('thumbUrlInput').value);
+        function forceDL(quality) {
+            const id = getVid(document.getElementById('tUrl').value);
             window.open(`https://img.youtube.com/vi/${id}/${quality}.jpg`, '_blank');
         }
 
-        function copyContent(id) {
-            const text = document.getElementById(id).innerText;
-            navigator.clipboard.writeText(text).then(() => {
-                alert("Copied Successfully! ✅");
-            });
+        function copyValue(id) {
+            const val = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(val).then(() => alert("Copied to Clipboard! ✅"));
+        }
+
+        function copyAllTags() {
+            const pills = document.querySelectorAll('.tag-pill span');
+            const all = Array.from(pills).map(p => p.innerText).join(', ');
+            navigator.clipboard.writeText(all).then(() => alert("All Tags Copied! ✅"));
         }
     </script>
 </body>
