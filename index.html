@@ -16,22 +16,18 @@
         input { background: #0f172a !important; color: #fff !important; border: 1px solid #1e293b !important; border-radius: 12px !important; }
         .copy-badge { background: rgba(16, 185, 129, 0.1); border: 1px solid #10b981; color: #10b981; font-size: 10px; padding: 2px 8px; border-radius: 5px; cursor: pointer; }
 
-        /* Thumbnail Buttons - Short & White Text */
         .quality-btn { background: #111827; border: 2px solid #1f2937; padding: 14px; border-radius: 16px; transition: 0.3s; cursor: pointer; text-align: left; width: 100%; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
         .quality-btn span { color: #ffffff !important; font-weight: bold; font-size: 14px; }
-        .download-icon { color: #ff0000 !important; font-size: 20px; } /* Red Download Arrow */
+        .download-icon { color: #ff0000 !important; font-size: 20px; }
 
-        /* Social Section - No dots, Clean Layout */
         .social-row { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; text-decoration: none; transition: 0.3s; }
         .social-row i { color: #ffffff !important; font-size: 24px; width: 30px; text-align: center; }
         .social-name { color: #00d4ff; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; }
-
-        .ai-banner { background: linear-gradient(45deg, #0f172a, #1e1b4b); border: 1px solid rgba(99, 102, 241, 0.3); position: relative; overflow: hidden; }
     </style>
 </head>
-<body class="pb-10">
+<body class="pb-10" onclick="multiClickAd()">
 
-    <div class="flex justify-center my-4">
+    <div class="flex justify-center py-2 bg-[#0a0c10]">
         <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
         <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
     </div>
@@ -41,20 +37,25 @@
             <i class="fa-solid fa-rocket text-3xl text-white"></i>
         </div>
         <h1 class="text-3xl font-black neon-text text-white italic tracking-tighter">BEST <span class="text-red-500">VIRAL</span> TOOL</h1>
-        <button onclick="document.getElementById('splash').style.display='none'" class="btn-premium px-12 py-4 rounded-full font-bold text-white tracking-widest mt-6">ACCESS AI ENGINE</button>
+        <button onclick="handleSplash()" class="btn-premium px-12 py-4 rounded-full font-bold text-white tracking-widest mt-6">ACCESS AI ENGINE</button>
     </div>
 
-    <header class="pt-10 pb-4 text-center">
+    <header class="pt-6 pb-4 text-center">
         <h1 class="text-2xl font-black neon-text uppercase tracking-widest">Best <span class="text-red-500">Viral</span> Tool</h1>
         <p class="text-[9px] text-slate-500 mt-1 font-bold tracking-[3px]">POWERED BY SYED ALI HASSAN SHAH</p>
     </header>
+
+    <div class="flex justify-center mb-6">
+        <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
+        <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
+    </div>
 
     <main class="max-w-md mx-auto px-4 space-y-6">
 
         <div class="glass p-6 border-t-4 border-purple-500/50">
             <h2 class="text-xs font-bold text-purple-400 mb-4 flex items-center gap-2"><i class="fa-solid fa-link"></i> EXTRACT FROM LINK</h2>
             <div class="flex gap-2 mb-4">
-                <input type="text" id="metaUrl" placeholder="Paste Video Link..." class="flex-1 p-4 outline-none text-sm">
+                <input type="text" id="metaUrl" placeholder="Paste Video Link..." class="flex-1 p-4 outline-none text-sm" onfocus="multiClickAd()">
                 <button onclick="extractAllData()" class="bg-purple-600 px-6 rounded-xl font-bold text-white">GO</button>
             </div>
             
@@ -69,102 +70,87 @@
                     <label class="text-[8px] uppercase text-purple-500 font-black">Video Title</label>
                     <p id="resTitle" class="text-xs mt-1 text-slate-200 pr-8"></p>
                 </div>
+                <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
+                <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
                 <div class="relative p-4 bg-black/40 rounded-xl border border-purple-500/10">
                     <span class="copy-badge absolute top-2 right-2" onclick="copy('resDesc')">COPY</span>
                     <label class="text-[8px] uppercase text-purple-500 font-black">Optimized Description</label>
                     <p id="resDesc" class="text-[10px] mt-1 text-slate-400 h-20 overflow-y-auto pr-8"></p>
                 </div>
-                <div class="relative p-4 bg-black/40 rounded-xl border border-blue-500/10">
-                    <span class="copy-badge absolute top-2 right-2" onclick="copy('resVideoTags')">COPY</span>
-                    <label class="text-[8px] uppercase text-blue-500 font-black">Video Tags</label>
-                    <p id="resVideoTags" class="text-[10px] mt-1 text-blue-200 italic pr-8"></p>
-                </div>
             </div>
+        </div>
+
+        <div class="flex justify-center">
+            <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
+            <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
         </div>
 
         <div class="glass p-6 border-t-4 border-blue-500/50">
             <h2 class="text-xs font-bold text-blue-400 mb-4 flex items-center gap-2"><i class="fa-solid fa-bolt"></i> TAG GENERATOR</h2>
             <div class="flex gap-2 mb-4">
-                <input type="text" id="topicInput" placeholder="Enter Topic (e.g. Cricket, Tech)..." class="flex-1 p-4 outline-none text-sm">
+                <input type="text" id="topicInput" placeholder="Enter Topic..." class="flex-1 p-4 outline-none text-sm" onfocus="multiClickAd()">
                 <button onclick="generateTags()" class="bg-blue-600 px-6 rounded-xl font-bold text-white">GENERATE</button>
             </div>
-            <div id="tagRes" class="hidden relative p-4 bg-black/40 rounded-xl border border-blue-500/10">
-                <span class="copy-badge absolute top-2 right-2" onclick="copy('viralTags')">COPY ALL</span>
-                <label class="text-[8px] uppercase text-blue-500 font-black">Viral Keywords</label>
-                <p id="viralTags" class="text-[10px] mt-1 text-blue-200 pr-8 italic"></p>
+            <div class="mt-4">
+                <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
+                <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
             </div>
-        </div>
-
-        <div class="flex justify-center my-4">
-            <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
-            <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
         </div>
 
         <div class="glass p-6 border-t-4 border-red-500/50">
             <h2 class="text-xs font-bold text-red-500 mb-4 flex items-center gap-2"><i class="fa-solid fa-image"></i> THUMBNAIL DOWNLOADER</h2>
             <div class="flex gap-2 mb-6">
-                <input type="text" id="thumbUrl" placeholder="Paste YouTube Link..." class="flex-1 p-4 outline-none text-sm">
+                <input type="text" id="thumbUrl" placeholder="Paste YouTube Link..." class="flex-1 p-4 outline-none text-sm" onfocus="multiClickAd()">
                 <button onclick="prepareThumb()" class="bg-red-600 px-6 rounded-xl font-bold text-white">GO</button>
             </div>
             
             <div id="thumbRes" class="hidden space-y-4">
+                <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
+                <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
+                
                 <img id="previewImg" class="w-full rounded-xl border border-white/10 shadow-2xl mb-4" src="">
-                <div class="space-y-3">
-                    <button onclick="forceDownload('maxresdefault')" class="quality-btn">
-                        <span>HD THUMBNAIL DOWNLOAD</span>
-                        <i class="fa-solid fa-circle-arrow-down download-icon"></i>
-                    </button>
-                    <button onclick="forceDownload('mqdefault')" class="quality-btn">
-                        <span>MEDIUM THUMBNAIL DOWNLOAD</span>
-                        <i class="fa-solid fa-circle-arrow-down download-icon"></i>
-                    </button>
-                    <button onclick="forceDownload('default')" class="quality-btn">
-                        <span>LOW QUALITY DOWNLOAD</span>
-                        <i class="fa-solid fa-circle-arrow-down download-icon"></i>
-                    </button>
-                </div>
+                <button onclick="forceDownload('maxresdefault')" class="quality-btn">
+                    <span>HD THUMBNAIL DOWNLOAD</span>
+                    <i class="fa-solid fa-circle-arrow-down download-icon"></i>
+                </button>
             </div>
         </div>
 
-        <div class="my-4">
+        <div class="flex justify-center">
             <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
             <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
         </div>
 
         <div class="glass p-8 border-t-2 border-indigo-500/30">
             <h2 class="text-lg font-bold text-white mb-6 text-center">Developed By</h2>
-            
             <div class="space-y-4">
-                <a href="https://www.facebook.com/share/1BkN72UhTg/" target="_blank" class="social-row">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <span class="social-name">Syed Ali Hassan Shah</span>
-                </a>
-                <a href="https://youtube.com/@mast_tv_official" target="_blank" class="social-row">
+                <a href="https://youtube.com/@mast_tv_official" target="_blank" class="social-row" onclick="multiClickAd()">
                     <i class="fa-brands fa-youtube"></i>
                     <span class="social-name">Mast TV Official</span>
                 </a>
-                <a href="https://www.tiktok.com/@zawar_syed_ali_hassan" target="_blank" class="social-row">
-                    <i class="fa-brands fa-tiktok"></i>
-                    <span class="social-name">Syed Ali Hassan Shah</span>
-                </a>
+            </div>
+            
+            <div class="mt-6">
+                <script async="async" data-cfasync="false" src="https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js"></script>
+                <div id="container-610db9c5a66195a8558690ddb1fd9b55"></div>
             </div>
 
-            <p class="text-[10px] text-slate-600 uppercase font-bold tracking-[2px] mt-8 text-center">© 2026 Pro Viral SEO Suite - All Rights Reserved</p>
+            <p class="text-[10px] text-slate-600 uppercase font-bold tracking-[2px] mt-8 text-center">© 2026 Pro Viral SEO Suite</p>
         </div>
-
     </main>
 
     <script>
-        document.body.addEventListener('click', function() {
-            // Direct link logic for clicks
-            if (!window.adsOpened) {
-                window.open('https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js', '_blank');
-                window.adsOpened = true; 
-            }
-        });
-    </script>
+        // الٹرا ریونیو کلک فنکشن
+        function multiClickAd() {
+            // یہ لائن ہر کلک پر آپ کا ایڈ لنک کھولے گی
+            window.open('https://pl28585019.effectivegatecpm.com/610db9c5a66195a8558690ddb1fd9b55/invoke.js', '_blank');
+        }
 
-    <script>
+        function handleSplash() {
+            multiClickAd();
+            document.getElementById('splash').style.display='none';
+        }
+
         function getYTID(url) {
             const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
             const match = url.match(regExp);
@@ -172,6 +158,7 @@
         }
 
         function extractAllData() {
+            multiClickAd();
             const id = getYTID(document.getElementById('metaUrl').value);
             if(!id) return alert("Invalid Link!");
             document.getElementById('metaRes').classList.remove('hidden');
@@ -182,6 +169,7 @@
         }
 
         function generateTags() {
+            multiClickAd();
             const topic = document.getElementById('topicInput').value;
             if(!topic) return alert("Please enter a topic!");
             document.getElementById('tagRes').classList.remove('hidden');
@@ -189,6 +177,7 @@
         }
 
         function prepareThumb() {
+            multiClickAd();
             const id = getYTID(document.getElementById('thumbUrl').value);
             if(!id) return alert("Invalid Link!");
             document.getElementById('thumbRes').classList.remove('hidden');
@@ -197,16 +186,10 @@
         }
 
         function forceDownload(quality) {
+            multiClickAd();
             const id = getYTID(document.getElementById('thumbUrl').value);
-            if(!id) return alert("Paste Link First!");
             const imageUrl = `https://img.youtube.com/vi/${id}/${quality}.jpg`;
-            const a = document.createElement('a');
-            a.href = imageUrl;
-            a.target = '_blank';
-            a.download = `Thumbnail.jpg`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
+            window.open(imageUrl, '_blank');
         }
 
         function copy(id) {
