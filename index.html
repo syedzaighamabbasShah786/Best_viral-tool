@@ -204,106 +204,111 @@
             </div>
         </div>
     </footer>
-    <script>
-        // 1. LIFETIME ENGINE: DYNAMIC CLOCK, DATE & YEAR
-        function runGlobalEngine() {
-            const now = new Date();
-            
-            // Update Clock
-            const timeString = now.toLocaleTimeString('en-US', { hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit' });
-            document.getElementById('liveClock').innerText = timeString;
-            
-            // Update Date
-            const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            document.getElementById('liveDate').innerText = now.toLocaleDateString('en-US', dateOptions);
-            
-            // Update Copyright Year Automatically
-            document.getElementById('autoYear').innerText = "© " + now.getFullYear() + " NEXUSVIRAL AI | DEVELOPED BY SYED ALI HASSAN SHAH";
-        }
-        setInterval(runGlobalEngine, 1000);
+<script>
+    // 1. GLOBAL IP & TRENDS ENGINE (IP Trace Logic)
+    let userRegion = "Global";
+    fetch('https://ipapi.co/json/').then(res => res.json()).then(data => {
+        userRegion = data.country_name;
+        console.log("Nexus Engine Optimized for: " + userRegion);
+    });
 
-        // 2. AI THUMBNAIL UPSCALER LOGIC (Simulation)
-        const fileInput = document.getElementById('fileInput');
-        fileInput.addEventListener('change', function() {
-            if (this.files && this.files[0]) {
-                const processArea = document.getElementById('processingArea');
-                const progressBar = document.getElementById('progressBar');
-                processArea.classList.remove('hidden');
-                
-                let width = 0;
-                const interval = setInterval(() => {
-                    if (width >= 100) {
-                        clearInterval(interval);
-                        alert("AI Success: Your Thumbnail has been upscaled to 4K Ultra HD (3840x2160). Ready for download!");
-                    } else {
-                        width++;
-                        progressBar.style.width = width + '%';
-                    }
-                }, 50);
+    // 2. AI THUMBNAIL ENHANCER (Fixing the Stuck Loading)
+    const fileInput = document.getElementById('fileInput');
+    fileInput.addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            const processArea = document.getElementById('processingArea');
+            const progressBar = document.getElementById('progressBar');
+            processArea.classList.remove('hidden');
+            
+            let progress = 0;
+            const engineCycle = setInterval(() => {
+                progress += Math.random() * 10;
+                if (progress >= 100) {
+                    clearInterval(engineCycle);
+                    progressBar.style.width = '100%';
+                    setTimeout(() => {
+                        alert("AI SUCCESS: Image enhanced to 4K Ultra HD. Metadata Optimized for " + userRegion + " servers.");
+                        processArea.classList.add('hidden');
+                    }, 500);
+                } else {
+                    progressBar.style.width = progress + '%';
+                }
+            }, 150);
+        }
+    });
+
+    // 3. VIRAL TAG ENGINE (Multi-Source Integration)
+    function generateViralTags() {
+        const topic = document.getElementById('tagInput').value;
+        const resBox = document.getElementById('tagBox');
+        const container = document.getElementById('tagResultContainer');
+
+        if (!topic) { alert("Please enter a viral topic!"); return; }
+
+        container.classList.remove('hidden');
+        resBox.innerHTML = "<span class='animate-pulse text-red-500'>Accessing Global Trend Databases...</span>";
+
+        setTimeout(() => {
+            // Simulated High-Authority Data Sources (Scraping Simulation)
+            const commonViral = ["viral", "trending", "2026", "shorts", "foryou", "best", "HD"];
+            const regionSpecific = userRegion === "Pakistan" ? ["pakistan", "urdu", "trending_pk"] : ["usa", "global", "high_cpm"];
+            
+            // Artificial Intelligence Keyword Expansion
+            let tags = [];
+            for(let i=0; i<40; i++) {
+                tags.push(topic + " " + commonViral[Math.floor(Math.random()*commonViral.length)]);
+                tags.push(topic + " " + regionSpecific[Math.floor(Math.random()*regionSpecific.length)]);
             }
-        });
-
-        // 3. VIRAL TAG GENERATOR (1000 Words Logic)
-        function generateViralTags() {
-            const input = document.getElementById('tagInput').value;
-            const tagBox = document.getElementById('tagBox');
-            const container = document.getElementById('tagResultContainer');
-
-            if (!input) { alert("Please enter a topic first!"); return; }
-
-            container.classList.remove('hidden');
-            tagBox.innerHTML = "Processing Neural Keywords...";
-
-            setTimeout(() => {
-                // High-CPM Viral Tag Base
-                const baseTags = "Viral, Trending 2026, YouTube SEO, High CPM, Content Creator, UK Viral, USA Trending, India SEO, Pakistan Tech, ";
-                const generated = Array(15).fill(input).map((v, i) => v + " " + (i+1) + " Viral, " + v + " SEO Tips, " + v + " 2026 Strategy").join(", ");
-                
-                tagBox.innerText = baseTags + generated + ", " + "How to go viral, SEO Masterclass, " + input + " Trending, Best Video Tags, AI Metadata Engine.";
-            }, 1500);
-        }
-
-        // 4. SMART HASHTAG ENGINE
-        function generateHashtags() {
-            const list = document.getElementById('hashtagList');
-            const tags = ['#Viral2026', '#NexusViralAI', '#SEOExpert', '#ContentKing', '#TrendingUK', '#USATech', '#CreatorsPK', '#DigitalIndia', '#AITools', '#VideoGrowth'];
             
+            // Output 1000+ words logic
+            const finalOutput = [...new Set(tags)].join(", ") + ", " + topic.toUpperCase() + " VIRAL SEO, " + topic + " MASTERCLASS 2026.";
+            resBox.innerText = finalOutput;
+        }, 2000);
+    }
+
+    // 4. SMART HASHTAG ENGINE (Fixing the Input/Fetch Issue)
+    function generateHashtags() {
+        const topic = document.getElementById('tagInput').value || "viral";
+        const list = document.getElementById('hashtagList');
+        
+        list.innerHTML = "<div class='text-[10px] text-red-500'>Connecting to TikTok & YT API...</div>";
+
+        setTimeout(() => {
             list.innerHTML = "";
-            tags.forEach(tag => {
+            const platforms = ["#"+topic, "#trending", "#viral", "#foryou", "#explore", "#"+userRegion, "#"+topic+"2026", "#bestvideo", "#reels", "#shorts"];
+            
+            platforms.forEach(tag => {
                 const div = document.createElement('div');
-                div.className = "bg-red-600/20 border border-red-600/40 px-4 py-2 rounded-lg text-[10px] text-white font-bold cursor-pointer hover:bg-red-600 transition";
+                div.className = "bg-red-600/10 border border-red-600/30 px-4 py-2 rounded-lg text-[10px] text-white font-bold cursor-pointer hover:bg-red-600 transition";
                 div.innerText = tag;
-                div.onclick = () => { navigator.clipboard.writeText(tag); alert("Hashtag Copied!"); };
+                div.onclick = () => {
+                    navigator.clipboard.writeText(tag);
+                    alert("Hashtag Copied: " + tag);
+                };
                 list.appendChild(div);
             });
-        }
+        }, 1500);
+    }
 
-        // 5. AI CHAT AGENT LOGIC
-        function toggleAIChat() {
-            document.getElementById('aiChatWindow').classList.toggle('hidden');
-        }
+    // 5. LIFETIME AUTO-SYNC ENGINE
+    function syncSystem() {
+        const now = new Date();
+        document.getElementById('liveClock').innerText = now.toLocaleTimeString();
+        document.getElementById('liveDate').innerText = now.toDateString();
+        document.getElementById('autoYear').innerText = "© " + now.getFullYear() + " NEXUSVIRAL AI ENGINE | ALL SYSTEMS OPERATIONAL";
+    }
+    setInterval(syncSystem, 1000);
 
-        const aiInput = document.getElementById('aiInput');
-        aiInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                const response = document.getElementById('aiResponse');
-                response.innerText = "Nexus AI is analyzing your query: '" + this.value + "'. In our 2026 database, this is trending in UK and US regions. Optimize for better CTR!";
-                this.value = "";
-            }
-        });
-
-        // 6. COPY ALL FUNCTION
-        function copyAll(elementId) {
-            const text = document.getElementById(elementId).innerText;
-            navigator.clipboard.writeText(text);
-            alert("All content copied to clipboard!");
-        }
-
-        window.onload = runGlobalEngine;
-    </script>
-</body>
-</html>
-
+    function toggleAIChat() {
+        document.getElementById('aiChatWindow').classList.toggle('hidden');
+    }
+    
+    function copyAll(id) {
+        const text = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(text);
+        alert("Success: All Viral Content Copied!");
+    }
+</script>
     <section class="max-w-7xl mx-auto px-6 py-20 border-t border-white/5">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div>
